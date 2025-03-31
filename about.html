@@ -27,6 +27,34 @@
   <link rel="stylesheet" href="assets/vendor/node_modules/css/glightbox.min.css" />
   <!-- Main CSS -->
   <link href="assets/css/theme.min.css" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {  /* Adjust breakpoint as needed */
+        .img-fluid2 {
+            display: none !important;
+        }
+    }
+    @media (max-width: 768px) {  /* For tablets and smaller screens */
+        .img-fluid1 {
+            width: 100px !important; /* Adjust as needed */
+            height: 30px !important;
+        }
+    }
+
+    @media (max-width: 576px) {  /* For mobile screens */
+        .img-fluid1 {
+            width: 70px !important; /* Adjust as needed */
+            height: 30px !important;
+        }
+    }
+    @media (max-width: 768px) {  /* For tablets and mobile */
+        .x-button-container {
+            top: 10px !important;  /* Adjust as needed */
+            right: 10px !important;
+            margin-top: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+    </style>
 
   <title>ACIC</title>
 </head>
@@ -34,10 +62,10 @@
 <body>
 
    <!--Preloader Spinner-->
-   <div class="spinner-loader bg-primary text-white">
+   <!-- <div class="spinner-loader bg-primary text-white">
       <div class="spinner-border" role="status">
       </div>
-  </div>
+  </div> -->
   <!--Begin::Header-->
   <header class="z-fixed header-absolute-top pt-lg-1 header-transparent" style="background-color: black!important;">
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -88,17 +116,17 @@
   <!--Begin::Fullscreen Offcanvas-->
   <div class="offcanvas offcanvas-fullscreen offcanvas-top h-100" id="offcanvas-fullscreen">
       <div class="offcanvas-body">
-          <!--Logo-->
-          <a class="navbar-brand position-absolute end-1 top-5 mt-5" href="index.html" style="margin-left:50px!important;">
-              <img src="assets/img/logo/Logos.png" alt="" class="img-fluid1" style="width: 200px; height: 50px;">
-          </a>
-          <!--Offcanvas fullscreen close-->
-          <div class="position-absolute end-0 top-0 mt-5 me-15">
-              <button class="btn btn-outline-secondary p-0 flex-center width-6x height-6x rounded-circle"
-                  data-bs-dismiss="offcanvas">
-                  <i class="bi bi-x fs-1"></i>
-              </button>
-          </div>
+            <!--Logo-->
+            <a class="navbar-brand position-absolute end-1 top-5 mt-5" href="index.html" style="margin-left:50px!important;">
+                <img src="assets/img/logo/Logos.png" alt="" class="img-fluid2" style="width: 200px!important; height: 50px;">
+            </a>
+            <!--Offcanvas fullscreen close-->
+            <div class="position-absolute end-0 top-0 mt-5 me-15 x-button-container">
+                <button class="btn btn-outline-secondary p-0 flex-center width-6x height-6x rounded-circle"
+                    data-bs-dismiss="offcanvas">
+                    <i class="bi bi-x fs-1"></i>
+                </button>
+            </div>
           <!--Offcanvas fullscreen content-->
           <div class="container h-100">
               <div class="row h-100 align-items-center">
